@@ -1,4 +1,5 @@
 #include <iostream>
+#include <typeinfo>
 
 /// A trivial class
 class A {

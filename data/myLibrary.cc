@@ -1,5 +1,5 @@
 #include "myLibrary.h"
-
+    
 A::A()
 {
    std::cout << "This is the constructor of A" << std::endl;
