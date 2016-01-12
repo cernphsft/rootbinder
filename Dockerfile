@@ -11,9 +11,7 @@ RUN apt-get install -y \
     libx11-6 \
     libxext6 \
     libxft2 \
-    libxpm4 \
-    r-base \
-    r-base-dev
+    libxpm4
     
 # Install ROOT additional libraries
 RUN apt-get install -y \
