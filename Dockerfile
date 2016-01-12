@@ -19,7 +19,7 @@ RUN apt-get install -y \
     r-base-dev
 
 # Install R packages
-R -e "install.packages(c('Rcpp','RInside'), repos = \"http://cran.case.edu\")"
+RUN R -e "install.packages(c('Rcpp','RInside'), repos = \"http://cran.case.edu\")"
 
 # Download and install ROOT master
 WORKDIR /opt
