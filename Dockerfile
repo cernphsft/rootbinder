@@ -11,13 +11,28 @@ RUN apt-get install -y \
     libx11-6 \
     libxext6 \
     libxft2 \
-    libxpm4
+    libxpm4 \
+    r-base \
+    r-base-dev
+    
+# Install ROOT additional libraries
+RUN apt-get install -y \
+    r-base \
+    r-base-dev
+
+# Install R packages
+R -e "install.packages(c('Rcpp','RInside'), repos = \"http://cran.case.edu\")"
 
 # Download and install ROOT master
 WORKDIR /opt
-RUN wget http://etejedor.web.cern.ch/etejedor/rootbooks/root_master.tar.gz 
-RUN tar xzf root_master.tar.gz
-RUN rm root_master.tar.gz
+RUN wget http://dpiparo.web.cern.ch/dpiparo/rootbooks/root.tar.gz 
+RUN tar xzf root.tar.gz
+RUN rm root.tar.gz
+
+# Download and install Fastjet
+RUN wget http://dpiparo.web.cern.ch/dpiparo/rootbooks/fastjet.tar.gz 
+RUN tar xzf fastjet.tar.gz
+RUN rm fastjet.tar.gz
 
 USER main
 
@@ -26,6 +41,10 @@ ENV ROOTSYS         "/opt/root"
 ENV PATH            "$ROOTSYS/bin:$ROOTSYS/bin/bin:$PATH"
 ENV LD_LIBRARY_PATH "$ROOTSYS/lib:$LD_LIBRARY_PATH"
 ENV PYTHONPATH      "$ROOTSYS/lib:PYTHONPATH"
+
+# Set ROOT environment for Fastjet
+ENV LD_LIBRARY_PATH "opt/fastjet/lib:$LD_LIBRARY_PATH"
+ENV ROOT_INCLUDE_PATH "opt/fastjet/include"
 
 # Customise the ROOTbook
 RUN pip install metakernel
