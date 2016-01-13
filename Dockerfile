@@ -11,9 +11,7 @@ RUN apt-get install -y \
     libx11-6 \
     libxext6 \
     libxft2 \
-    libxpm4 \
-    r-base \
-    r-base-dev
+    libxpm4
     
 # Install ROOT additional libraries
 RUN apt-get install -y \
@@ -21,7 +19,7 @@ RUN apt-get install -y \
     r-base-dev
 
 # Install R packages
-R -e "install.packages(c('Rcpp','RInside'), repos = \"http://cran.case.edu\")"
+RUN R -e "install.packages(c('Rcpp','RInside'), repos = \"http://cran.case.edu\")"
 
 # Download and install ROOT master
 WORKDIR /opt
@@ -43,8 +41,8 @@ ENV LD_LIBRARY_PATH "$ROOTSYS/lib:$LD_LIBRARY_PATH"
 ENV PYTHONPATH      "$ROOTSYS/lib:PYTHONPATH"
 
 # Set ROOT environment for Fastjet
-ENV LD_LIBRARY_PATH "opt/fastjet/lib:$LD_LIBRARY_PATH"
-ENV ROOT_INCLUDE_PATH "opt/fastjet/include"
+ENV LD_LIBRARY_PATH "/opt/fastjet/lib:$LD_LIBRARY_PATH"
+ENV ROOT_INCLUDE_PATH "/opt/fastjet/include"
 
 # Customise the ROOTbook
 RUN pip install metakernel
