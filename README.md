@@ -6,6 +6,7 @@ This repository contains a set of files to use [ROOT](http://root.cern.ch)books 
 * Dockerfile to customise Binder for [ROOT](http://root.cern.ch)
 * [ROOT](http://root.cern.ch)book example files
 
-**Try ROOTbooks now in Binder!**
+[Enric Tejedor](https://github.com/etejedor), [Danilo Piparo](https://github.com/dpiparo) (2015-2016)
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/cernphsft/rootbinder)
+
