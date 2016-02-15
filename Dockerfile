@@ -23,12 +23,12 @@ RUN R -e "install.packages(c('Rcpp','RInside'), repos = \"http://cran.case.edu\"
 
 # Download and install ROOT master
 WORKDIR /opt
-RUN wget http://dpiparo.web.cern.ch/dpiparo/rootbooks/root.tar.gz 
+RUN wget http://root.cern.ch/notebooks/rootbinderdata/root.tar.gz 
 RUN tar xzf root.tar.gz
 RUN rm root.tar.gz
 
 # Download and install Fastjet
-RUN wget http://dpiparo.web.cern.ch/dpiparo/rootbooks/fastjet.tar.gz 
+RUN wget http://root.cern.ch/notebooks/rootbinderdata/fastjet.tar.gz 
 RUN tar xzf fastjet.tar.gz
 RUN rm fastjet.tar.gz
 
