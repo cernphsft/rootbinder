@@ -47,5 +47,5 @@ ENV ROOT_INCLUDE_PATH "/opt/fastjet/include"
 # Customise the ROOTbook
 RUN pip install --upgrade pip
 RUN pip install metakernel
-RUN cp -r $ROOTSYS/etc/notebook/kernels/root $HOME/.ipython/kernels
-RUN cp -r $ROOTSYS/etc/notebook/custom       $HOME/.ipython/profile_default/static
+#RUN cp -r $ROOTSYS/etc/notebook/kernels/root $HOME/.ipython/kernels
+#RUN cp -r $ROOTSYS/etc/notebook/custom       $HOME/.ipython/profile_default/static
