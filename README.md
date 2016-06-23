@@ -8,7 +8,7 @@ This repository contains a set of files to use [ROOT](http://root.cern.ch)books 
 
 [Enric Tejedor](https://github.com/etejedor), [Danilo Piparo](https://github.com/dpiparo) (2015-2016)
 
-<a href="https://swan002.cern.ch/?projurl=https://github.com/dpiparo/rootbinder" target="_blank"><img alt="" src="https://img.shields.io/badge/Open%20in-SWAN-orange.svg" style="width: 98px; height: 20px;" />
+<a href="https://swan002.cern.ch/?projurl=https://github.com/dpiparo/rootbinder.git" target="_blank"><img alt="" src="https://img.shields.io/badge/Open%20in-SWAN-orange.svg" style="width: 98px; height: 20px;" />
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/cernphsft/rootbinder) 
 
