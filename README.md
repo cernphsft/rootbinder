@@ -6,7 +6,7 @@ This repository contains a set of files to use [ROOT](http://root.cern.ch)books 
 * Dockerfile to customise Binder for [ROOT](http://root.cern.ch)
 * [ROOT](http://root.cern.ch)book example files
 
-[Enric Tejedor](https://github.com/etejedor), [Danilo Piparo](https://github.com/dpiparo) (2015-2016)
+[Enric Tejedor](https://github.com/etejedor), [Danilo Piparo](https://github.com/dpiparo) (2015-2017)
 
 <a href="https://cern.ch/swanserver/cgi-bin/go/?projurl=https://github.com/dpiparo/rootbinder.git" target="_blank"><img alt="" src="http://swanserver.web.cern.ch/swanserver/images/badge_swan_white_150.png" />
 
