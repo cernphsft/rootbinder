@@ -8,6 +8,6 @@ This repository contains a set of files to use [ROOT](http://root.cern.ch)books 
 
 [Enric Tejedor](https://github.com/etejedor), [Danilo Piparo](https://github.com/dpiparo) (2015-2016)
 
-<a href="https://swan002.cern.ch/?projurl=https://github.com/dpiparo/rootbinder.git" target="_blank"><img alt="" src="http://swanserver.web.cern.ch/swanserver/images/badge_swan_white_150.png" />
+<a href="https://cern.ch/swanserver/cgi-bin/go/?projurl=https://github.com/dpiparo/rootbinder.git" target="_blank"><img alt="" src="http://swanserver.web.cern.ch/swanserver/images/badge_swan_white_150.png" />
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/cernphsft/rootbinder) 
